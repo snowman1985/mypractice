@@ -1,0 +1,77 @@
+#!/bin/sh
+cat << __EOC__
+$ ./configure  '--prefix=/opt/bacula' '--sbindir=/opt/bacula/bin' '--sysconfdir=/opt/bacula/conf' '--enable-smartalloc' '--enable-tray-monitor' '--with-postgresql' '--with-working-dir=/opt/bacula/working' '--with-pid-dir=/opt/bacula/working' '--with-subsys-dir=/opt/bacula/working' '--enable-conio'
+
+Configuration on Thu Mar 20 13:38:43 CST 2014:
+
+   Host:		     x86_64-unknown-linux-gnu -- ubuntu 12.04
+   Bacula version:	     Bacula 5.2.13 (19 February 2013)
+   Source code location:     .
+   Install binaries:	     /opt/bacula/bin
+   Install libraries:	     /opt/bacula/lib
+   Install config files:     /opt/bacula/conf
+   Scripts directory:	     /opt/bacula/conf
+   Archive directory:	     /tmp
+   Working directory:	     /opt/bacula/working
+   PID directory:	     /opt/bacula/working
+   Subsys directory:	     /opt/bacula/working
+   Man directory:	     ${datarootdir}/man
+   Data directory:	     /opt/bacula/share
+   Plugin directory:	     /opt/bacula/lib
+   C Compiler:		     gcc 4.6.3-1ubuntu5)
+   C++ Compiler:	     /usr/bin/g++ 4.6.3-1ubuntu5)
+   Compiler flags:	      -g -O2 -Wall -fno-strict-aliasing -fno-exceptions -fno-rtti
+   Linker flags:	      
+   Libraries:		     -lpthread -ldl -ldl 
+   Statically Linked Tools:  no
+   Statically Linked FD:     no
+   Statically Linked SD:     no
+   Statically Linked DIR:    no
+   Statically Linked CONS:   no
+   Database backends:	     PostgreSQL
+   Database port:	      
+   Database name:	     bacula
+   Database user:	     bacula
+
+   Job Output Email:	     root@localhost
+   Traceback Email:	     root@localhost
+   SMTP Host Address:	     localhost
+
+   Director Port:	     9101
+   File daemon Port:	     9102
+   Storage daemon Port:      9103
+
+   Director User:	     
+   Director Group:	     
+   Storage Daemon User:      
+   Storage DaemonGroup:      
+   File Daemon User:	     
+   File Daemon Group:	     
+
+   Large file support:	     yes
+   Bacula conio support:     yes -ltinfo
+   readline support:	     no 
+   TCP Wrappers support:     no 
+   TLS support: 	     yes
+   Encryption support:	     yes
+   ZLIB support:	     yes
+   LZO support: 	     no
+   enable-smartalloc:	     yes
+   enable-lockmgr:	     no
+   bat support: 	     no
+   enable-gnome:	     no 
+   enable-bwx-console:	     no 
+   enable-tray-monitor:      yes
+   client-only: 	     no
+   build-dird:		     yes
+   build-stored:	     yes
+   Plugin support:	     yes
+   AFS support: 	     no
+   ACL support: 	     no
+   XATTR support:	     yes
+   Python support:	     no 
+   systemd support:	     no 
+   Batch insert enabled:     PostgreSQL
+
+  
+__EOC__
